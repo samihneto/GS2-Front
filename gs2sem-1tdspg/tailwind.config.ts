@@ -20,6 +20,11 @@ export default {
         laranjaMedio: "#FF9941",
         laranjaEscuro: "#EC7D1D",
       },
+      fontFamily: {
+        Lato: ['Lato', 'sans-serif'],
+        Montserrat: ['Montserrat', 'sans-serif'],
+        PlayfairDisplay: ['Playfair Display', 'serif'],
+      },
     },
   },
   plugins: [],
