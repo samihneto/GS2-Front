@@ -35,7 +35,7 @@ export default function Login() {
               placeholder="Digite seu e-mail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-3 border border-gray-300 rounded-md mt-2"
+              className="w-full p-3 border border-verdeMedio rounded-md mt-2"
             />
           </div>
           <div className="mb-4">
@@ -45,7 +45,7 @@ export default function Login() {
               placeholder="Digite sua senha"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-3 border border-gray-300 rounded-md mt-2"
+              className="w-full p-3 border border-verdeMedio rounded-md mt-2"
             />
           </div>
           <div className="flex justify-between items-center mb-6">

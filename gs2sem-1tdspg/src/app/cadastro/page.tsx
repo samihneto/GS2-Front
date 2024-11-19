@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Cadastro() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex justify-center items-center pt-12 pb-32 bg-gray-100">
     <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
       <h2 className="text-3xl font-Lato text-verdeEscuro font-black text-center mb-6">CRIAR CONTA</h2>
       <form>
@@ -12,7 +12,7 @@ export default function Cadastro() {
           <input
             type="text"
             placeholder="Digite seu nome"
-            className="w-full p-3 border border-gray-300 rounded-md mt-2"
+            className="w-full p-3 border border-verdeMedio rounded-md mt-2"
           />
         </div>
 
@@ -21,7 +21,7 @@ export default function Cadastro() {
           <input
             type="email"
             placeholder="Digite seu e-mail"
-            className="w-full p-3 border border-gray-300 rounded-md mt-2"
+            className="w-full p-3 border border-verdeMedio rounded-md mt-2"
           />
         </div>
 
@@ -30,7 +30,7 @@ export default function Cadastro() {
           <input
             type="password"
             placeholder="Digite sua senha"
-            className="w-full p-3 border border-gray-300 rounded-md mt-2"
+            className="w-full p-3 border border-verdeMedio rounded-md mt-2"
           />
         </div>
 
@@ -39,7 +39,7 @@ export default function Cadastro() {
           <input
             type="password"
             placeholder="Confirme sua senha"
-            className="w-full p-3 border border-gray-300 rounded-md mt-2"
+            className="w-full p-3 border border-verdeMedio rounded-md mt-2"
           />
         </div>
 

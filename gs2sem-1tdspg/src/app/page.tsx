@@ -7,19 +7,19 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-10 text-verdeEscuro">Por que escolher a Gerasol?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-gray-100 p-6 text-center rounded-lg shadow">
-              <h3 className="text-xl font-Lato font-semibold mb-3 text-verdeEscuro">Sustentabilidade</h3>
+              <h3 className="text-xl font-Lato font-black mb-3 text-verdeEscuro">Sustentabilidade</h3>
               <p>Energia 100% renovável.</p>
             </div>
             <div className="bg-gray-100 p-6 text-center rounded-lg shadow">
-              <h3 className="text-xl font-Lato font-semibold mb-3 text-verdeEscuro">Flexibilidade</h3>
+              <h3 className="text-xl font-Lato font-black mb-3 text-verdeEscuro">Flexibilidade</h3>
               <p>Opções de venda e aluguel.</p>
             </div>
             <div className="bg-gray-100 p-6 text-center rounded-lg shadow">
-              <h3 className="text-xl font-Lato font-semibold mb-3 text-verdeEscuro">Atendimento Especializado</h3>
+              <h3 className="text-xl font-Lato font-black mb-3 text-verdeEscuro">Atendimento Especializado</h3>
               <p>Soluções personalizadas para cada cliente.</p>
             </div>
             <div className="bg-gray-100 p-6 text-center rounded-lg shadow">
-              <h3 className="text-xl font-Lato font-semibold mb-3 text-verdeEscuro">Confiabilidade</h3>
+              <h3 className="text-xl font-Lato font-black mb-3 text-verdeEscuro">Confiabilidade</h3>
               <p>Equipamentos modernos e eficientes.</p>
             </div>
           </div>
@@ -32,17 +32,17 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-10 text-verdeEscuro">Nossos Geradores Solares</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow text-center">
-              <h3 className="text-2xl font-Lato font-semibold mb-4 text-verdeEscuro">Residências</h3>
+              <h3 className="text-2xl font-Lato font-black mb-4 text-verdeEscuro">Residências</h3>
               <p>Geradores solares para sua casa.</p>
               <a href="#" className="mt-4 inline-block bg-laranjaEscuro hover:bg-laranjaMedio text-white py-2 px-4 rounded">Ver mais</a>
             </div>
             <div className="bg-white p-6 rounded-lg shadow text-center">
-              <h3 className="text-2xl font-Lato font-semibold mb-4 text-verdeEscuro">Empresas e Comércios</h3>
+              <h3 className="text-2xl font-Lato font-black mb-4 text-verdeEscuro">Empresas e Comércios</h3>
               <p>Energia confiável para seu negócio.</p>
               <a href="#" className="mt-4 inline-block bg-laranjaEscuro hover:bg-laranjaMedio text-white py-2 px-4 rounded">Ver mais</a>
             </div>
             <div className="bg-white p-6 rounded-lg shadow text-center">
-              <h3 className="text-2xl font-Lato font-semibold mb-4 text-verdeEEscuro">Eventos e Obras</h3>
+              <h3 className="text-2xl font-Lato font-black mb-4 text-verdeEscuro">Eventos e Obras</h3>
               <p>Soluções energéticas para ocasiões especiais.</p>
               <a href="#" className="mt-4 inline-block bg-laranjaEscuro hover:bg-laranjaMedio text-white py-2 px-4 rounded">Ver mais</a>
             </div>
