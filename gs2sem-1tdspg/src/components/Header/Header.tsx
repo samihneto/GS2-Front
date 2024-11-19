@@ -14,7 +14,7 @@ export default function Header() {
 
 
     return (
-        <header className="flex justify-center gap-8 bg-white shadow-lg">
+        <header className="flex justify-center gap-8 bg-white shadow-lg items-center">
             <Image
                 className=""
                 src={Logo}
@@ -38,6 +38,7 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
+            <Link className="bg-verdeEscuro p-2 rounded-lg text-white hover:bg-verde" href="/pedidos">Pedidos</Link>
             <button onClick={toggleModal}>
                 <IoPerson className="text-4xl text-verdeEscuro border-2 border-verdeEscuro p-1 rounded-2xl hover:text-verdeMedio hover:border-verdeMedio" />
             </button>
