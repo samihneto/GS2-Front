@@ -1,11 +1,20 @@
+"use client";
+
 import Link from 'next/link'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '@/assets/imgs/logo.png'
+import { IoPerson } from 'react-icons/io5'
 
 export default function Header() {
+    const [modal, setModal] = useState(false);
+    const toggleModal = () => {
+        setModal(!modal);
+    };
+
+
     return (
-        <header className="flex justify-center gap-4 bg-white shadow-lg">
+        <header className="flex justify-center gap-8 bg-white shadow-lg">
             <Image
                 className=""
                 src={Logo}
@@ -19,7 +28,7 @@ export default function Header() {
                         <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/">HOME</Link>
                     </li>
                     <li>
-                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/catálogo">CATÁLOGO</Link>
+                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/catalogo">CATÁLOGO</Link>
                     </li>
                     <li>
                         <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/alugue">ALUGUE</Link>
@@ -29,7 +38,29 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
-            
+            <button onClick={toggleModal}>
+                <IoPerson className="text-4xl text-verdeEscuro border-2 border-verdeEscuro p-1 rounded-2xl hover:text-verdeMedio hover:border-verdeMedio" />
+            </button>
+
+            {modal && (
+                    <div 
+                        className="absolute bg-white w-96 p-12 rounded-lg shadow-lg flex flex-col justify-center items-center gap-4" 
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button 
+                            className="absolute top-4 right-4 text-2xl" 
+                            onClick={toggleModal}
+                        >
+                            &times;
+                        </button>
+                        <Link className="p-2 bg-verdeEscuro items-center text-center text-white hover:bg-verde text-2xl font-black font-Montserrat rounded-md" href="/login">
+                            LOGIN
+                        </Link>
+                        <Link className="text-center text-laranjaEscuro hover:text-laranjaMedio" href="/cadastro">
+                            Não tem uma conta?
+                        </Link>
+                    </div>
+            )}
         </header>
     )
 }

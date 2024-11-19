@@ -58,12 +58,12 @@ export default function Home() {
             <blockquote className="italic text-lg">
               "A Gerasol garantiu energia para nosso evento sem falhas. Recomendo!"
               <br />
-              <span className="font-Lato font-semibold text-verdeEscuro">- Cliente Satisfeito</span>
+              <span className="font-Lato font-semibold text-verdeEscuro">- Hugo Partezane</span>
             </blockquote>
             <blockquote className="italic text-lg">
               "Economizamos muito com os geradores solares. Ótima escolha!"
               <br />
-              <span className="font-Lato font-semibold text-verdeEscuro">- Maria Souza</span>
+              <span className="font-Lato font-semibold text-verdeEscuro">- Laerte Andrade</span>
             </blockquote>
           </div>
         </div>
