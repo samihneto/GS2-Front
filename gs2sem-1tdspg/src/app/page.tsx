@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import Gerador1 from '@/assets/imgs/alugue/gerador-solar-1.jpg'
+
 export default function Home() {
   return (
     <div>
@@ -92,6 +95,42 @@ export default function Home() {
           >
             Fale com um Especialista
           </a>
+        </div>
+      </section>
+      {/* Anúncio de Aluguel */}
+      <section className="bg-gray-100 py-16">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
+            <div className="bg-laranjaEscuro p-12 rounded-lg shadow-lg w-2/4 justify-center gap-12">
+              <h1 className="text-4xl font-black text-center mb-12 text-white">
+                ALUGUE O GERADOR IDEAL PARA SUAS NECESSIDADES!
+              </h1>
+              <Image
+                src={Gerador1}
+                alt="Gerador Solar para Aluguel"
+                width={400}
+                height={300}
+                className="rounded-lg justify-self-center m-4"
+              />
+              <h2 className="text-2xl font-Montserrat font-black mt-8 text-white">
+                Por que Alugar um Gerador Solar?
+              </h2>
+              <p className="text-white">
+                Você precisa de uma solução para um problema com falta de energia? Ou talvez deseje um suporte para seu evento? Ou uma saída para sua viagem? Talvez precise de uma garantia em sua residência em tempos de chuva?
+              </p>
+              <div className="mt-6 text-center">
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Comece Agora!
+                </h3>
+                <p className="text-white">
+                  Entre em contato conosco e descubra a solução perfeita.
+                </p>
+                <button className="mt-4 bg-verdeEscuro hover:bg-verde text-white py-3 px-6 rounded-lg font-bold transition-colors">
+                  Solicitar Cotação
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
