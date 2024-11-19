@@ -14,21 +14,22 @@ export default function Header() {
                 alt="Logo da Gerasol"
             />
             <nav className="flex justify-center items-center" >
-                <ul className="flex justify-center content-center gap-4">
+                <ul className="flex justify-center content-center gap-6">
                     <li>
-                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat" href="/">HOME</Link>
+                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/">HOME</Link>
                     </li>
                     <li>
-                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat" href="/catálogo">CATÁLOGO</Link>
+                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/catálogo">CATÁLOGO</Link>
                     </li>
                     <li>
-                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat" href="/alugue">ALUGUE</Link>
+                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/alugue">ALUGUE</Link>
                     </li>
                     <li>
-                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat" href="/about">SOBRE NÓS</Link>
+                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/about">SOBRE NÓS</Link>
                     </li>
                 </ul>
             </nav>
+            
         </header>
     )
 }
