@@ -5,6 +5,7 @@ import { use } from "react";
 import { IPropsCatalogo } from "@/interface/IPropsCatalogo";
 import Image from "next/image";
 import Gerador from "@/assets/imgs/comprar/gerador_comercial.jpg"
+import Link from "next/link";
 
 export default function ProdutoDetalhes({ params }: { params: Promise<{ id: string }> }) {
     const { id } = use(params); // Resolva o params com o hook use()
@@ -74,9 +75,11 @@ export default function ProdutoDetalhes({ params }: { params: Promise<{ id: stri
                     <p className="font-Lato font-medium text-lg text-verdeEscuro">Quanto custa para alugar? {gerador.precoAluguelDiario}</p>
                     <p className="font-Lato font-medium text-lg text-verdeEscuro">Qual é o tempo de recarga? {gerador.tempoCarga}</p>
                     <div className="mt-8 flex justify-center">
-                        <button className="bg-verdeEscuro text-white py-2 px-6 rounded hover:bg-verde transition-colors">
-                            Comprar
-                        </button>
+                        <Link href="/pagamento" >
+                            <button className="bg-verdeEscuro text-white py-2 px-6 rounded hover:bg-verde transition-colors">
+                                Comprar
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
