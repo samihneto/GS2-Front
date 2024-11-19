@@ -21,18 +21,43 @@ export default function Chatbot() {
   };
 
   const fetchBotResponse = async (message: string): Promise<string> => {
-    // Lógica de resposta simples
-    if (message.toLowerCase().includes("olá")) {
+    // Normaliza a mensagem do usuário para facilitar a comparação
+    const normalizedMessage = message.toLowerCase().trim();
+  
+    // Respostas simples com palavras-chave
+    if (normalizedMessage.includes("olá")) {
       return "Olá! Como posso ajudar você hoje?";
-    } else if (message.toLowerCase().includes("ajuda")) {
+    } else if (normalizedMessage.includes("ajuda")) {
       return "Claro! Me diga como posso ajudar.";
+    } else if (normalizedMessage.includes("comprar")) {
+      return "Se você está buscando comprar um de nossos geradores, recomendo que dê uma olhada em nosso catálogo!";
+    } else if (normalizedMessage.includes("alugar")) {
+      return "Escolha uma das quatro opções: (a) Viagem; (b) Evento; (c) Residência; (d) Emergência";
     }
-    return "Desculpe, ainda estou aprendendo e não entendi sua mensagem.";
+  
+    // Respostas específicas para cada alternativa
+    switch (normalizedMessage) {
+      case "a":
+      case "viagem":
+        return "Para viagens, recomendamos nossos geradores portáteis, fáceis de transportar e de alta eficiência energética!";
+      case "b":
+      case "evento":
+        return "Para eventos, sugerimos os geradores de médio porte, ideais para iluminação e equipamentos de som.";
+      case "c":
+      case "residência":
+        return "Para residências, oferecemos geradores solares que garantem energia sustentável e confiável.";
+      case "d":
+      case "emergência":
+        return "Para emergências, nossos geradores de resposta rápida são perfeitos para evitar interrupções.";
+    }
+  
+    // Resposta genérica para mensagens não reconhecidas
+    return "Desculpe, ainda estou aprendendo e não entendi sua mensagem. Tente reformular!";
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-4 bg-gray-100 rounded-lg shadow">
-      <div className="h-64 overflow-y-scroll bg-white p-4 rounded-lg border border-gray-300">
+    <div className="max-w-md mx-auto mt-10 p-4 bg-white rounded-lg shadow-xl">
+      <div className="h-96 overflow-y-scroll bg-white p-4 rounded-lg border border-gray-300">
         {messages.map((msg, index) => (
           <div
             key={index}
@@ -43,8 +68,8 @@ export default function Chatbot() {
             <div
               className={`inline-block px-4 py-2 rounded-lg ${
                 msg.sender === "user"
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-300 text-black"
+                  ? "bg-verdeMedio text-white"
+                  : "bg-laranjaMedio text-white"
               }`}
             >
               {msg.text}
@@ -61,7 +86,7 @@ export default function Chatbot() {
           onChange={(e) => setInput(e.target.value)}
         />
         <button
-          className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+          className="bg-laranjaEscuro text-white px-4 py-2 rounded-lg hover:bg-laranjaMedio"
           onClick={handleSend}
         >
           Enviar

@@ -31,7 +31,7 @@ export default function Header() {
                         <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/catalogo">CATÁLOGO</Link>
                     </li>
                     <li>
-                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/alugue">ALUGUE</Link>
+                        <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/alugue">DESCUBRA</Link>
                     </li>
                     <li>
                         <Link className="text-verdeEscuro text-2xl font-black font-Montserrat hover:text-verde" href="/about">SOBRE NÓS</Link>
