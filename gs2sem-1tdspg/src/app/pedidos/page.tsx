@@ -30,24 +30,22 @@ export default function PedidosPage() {
     }
   };
 
-  const criarPedido = async () => {
-    try {
-      const response = await fetch(apiUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(novoPedido),
-      });
-
-      if (!response.ok) throw new Error("Erro ao criar pedido");
-      const data = await response.json();
-      setPedidos((prev) => [...prev, data]);
-      setNovoPedido({});
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  // const criarPedido = async () => {
+  //   try {
+  //     const response = await fetch(apiUrl, {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(novoPedido),
+  //     });
+  //     if (response.ok) {
+        
+  //     }
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // };
 
   const atualizarPedido = async (pedido: Pedido) => {
     try {
@@ -96,7 +94,7 @@ export default function PedidosPage() {
           Gerenciamento de Pedidos
         </h1>
 
-        {/* Formulário para criar novo pedido */}
+        {/* Formulário para criar novo pedido
         <div className="bg-white p-6 rounded-lg shadow-lg mb-12">
           <h2 className="text-2xl font-black text-verdeEscuro mb-6 font-Montserrat">
             Criar Novo Pedido
@@ -139,7 +137,7 @@ export default function PedidosPage() {
           >
             Adicionar Pedido
           </button>
-        </div>
+        </div> */}
 
         {/* Tabela de pedidos */}
         <div className="overflow-x-auto bg-white p-6 rounded-lg shadow-lg">
