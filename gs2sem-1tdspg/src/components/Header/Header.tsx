@@ -40,7 +40,6 @@ export default function Header() {
             </nav>
             <div className="flex gap-2">
                 <Link className="bg-verdeEscuro p-2 rounded-lg text-white hover:bg-verde" href="/pedidos">Pedidos</Link>
-                <Link className="bg-verdeEscuro p-2 rounded-lg text-white hover:bg-verde" href="/agendamentos">Agendamentos</Link>
             </div>
             <button onClick={toggleModal}>
                 <IoPerson className="text-4xl text-verdeEscuro border-2 border-verdeEscuro p-1 rounded-2xl hover:text-verdeMedio hover:border-verdeMedio" />

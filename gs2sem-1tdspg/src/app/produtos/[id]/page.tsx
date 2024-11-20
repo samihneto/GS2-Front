@@ -74,12 +74,13 @@ export default function ProdutoDetalhes({ params }: { params: Promise<{ id: stri
                     <p className="font-Lato font-medium text-lg text-verdeEscuro">Quanto tem de potência? {gerador.potencia}</p>
                     <p className="font-Lato font-medium text-lg text-verdeEscuro">Quanto custa para alugar? {gerador.precoAluguelDiario}</p>
                     <p className="font-Lato font-medium text-lg text-verdeEscuro">Qual é o tempo de recarga? {gerador.tempoCarga}</p>
-                    <div className="mt-8 flex justify-center">
+                    <div className="mt-8 flex justify-center gap-4">
                         <Link href="/pagamento" >
-                            <button className="bg-verdeEscuro text-white py-2 px-6 rounded hover:bg-verde transition-colors">
+                            <button className="bg-verdeEscuro text-white py-2 px-6 rounded-md hover:bg-verde transition-colors">
                                 Comprar
                             </button>
                         </Link>
+                        <Link className="bg-verdeEscuro p-2 rounded-md text-white hover:bg-verde" href="/agendamentos">Alugar</Link>
                     </div>
                 </div>
             </div>
