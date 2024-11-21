@@ -5,11 +5,10 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div>
-      {/* Destaques da Empresa */}
       <section className="py-16 bg-white" id="destaques">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-10 text-verdeEscuro">Por que escolher a Gerasol?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-gray-100 p-6 text-center rounded-lg shadow-md hover:shadow-xl">
               <h3 className="text-xl font-Lato font-black mb-3 text-verdeEscuro">Sustentabilidade</h3>
               <p>Energia 100% renovável.</p>
@@ -30,11 +29,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Produtos e Serviços */}
       <section className="py-16 bg-gray-50" id="produtos">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-10 text-verdeEscuro">Nossos Geradores Solares</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow text-center">
               <h3 className="text-2xl font-Lato font-black mb-4 text-verdeEscuro">Residências</h3>
               <p>Geradores solares para sua casa.</p>
@@ -54,7 +52,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Depoimentos de Clientes */}
       <section className="py-16 bg-white" id="depoimentos">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-10 text-verdeEscuro">O que nossos clientes estão dizendo</h2>
@@ -73,7 +70,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Benefícios de Usar Energia Solar */}
       <section className="py-16 bg-gray-50" id="beneficios">
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-Montserrat text-3xl font-bold mb-10 text-verdeEscuro">A Energia Solar é o Futuro</h2>
@@ -86,7 +82,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Chamada para Ação */}
       <section className="py-16 bg-laranjaEscuro text-white text-center">
         <div className="container mx-auto px-6">
           <h2 className="font-Montserrat text-3xl font-bold mb-6">Pronto para garantir sua energia sustentável?</h2>
@@ -98,11 +93,11 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      {/* Anúncio de Aluguel */}
+
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
-            <div className="bg-laranjaEscuro p-12 rounded-lg shadow-lg w-2/4 justify-center gap-12">
+            <div className="bg-laranjaEscuro p-12 rounded-lg shadow-lg md:w-2/4 w-full justify-center gap-12">
               <h1 className="text-4xl font-black text-center mb-12 text-white">
                 ALUGUE O GERADOR IDEAL PARA SUAS NECESSIDADES!
               </h1>
