@@ -16,9 +16,6 @@ export default function Footer() {
                         <Link className="hover:text-white" href={''} >Produtos</Link>
                     </li>
                     <li className="my-2 md:my-0">
-                        <Link className="hover:text-white" href={''} >Blog</Link>
-                    </li>
-                    <li className="my-2 md:my-0">
                         <Link className="hover:text-white" href={''} >Contato</Link>
                     </li>
                 </ul>

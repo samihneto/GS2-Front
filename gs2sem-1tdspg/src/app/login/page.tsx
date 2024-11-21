@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { label } from "framer-motion/client";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -23,7 +24,7 @@ export default function Login() {
   };
 
   return (
-    <div className="flex justify-center items-center pt-12 pb-32 bg-gray-100">
+    <div className="flex justify-center items-center pt-12 pb-32 bg-gray-100 min-h-screen">
       <div className="bg-white p-8 rounded-lg shadow-lg w-96">
         <h2 className="text-3xl font-Lato text-verdeEscuro font-black text-center mb-6">LOGIN</h2>
         {error && <p className="text-red-500 text-sm mb-4">{error}</p>}

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Cadastro() {
   return (
-    <div className="flex justify-center items-center pt-12 pb-32 bg-gray-100">
+    <div className="flex justify-center items-center pt-12 pb-32 bg-gray-100 min-h-screen">
     <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
       <h2 className="text-3xl font-Lato text-verdeEscuro font-black text-center mb-6">CRIAR CONTA</h2>
       <form>
