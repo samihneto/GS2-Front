@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { label } from "framer-motion/client";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -11,15 +10,11 @@ export default function Login() {
 
   const handleLogin = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para autenticar o usuário
-    // Se a autenticação falhar, defina um erro
     if (!email || !password) {
       setError("Por favor, preencha todos os campos.");
       return;
     }
-    // Exemplo de sucesso
     setError("");
-    // Realizar autenticação...
     console.log("Usuário autenticado:", email);
   };
 

@@ -1,9 +1,8 @@
 import { IPropsCatalogo } from '@/interface/IPropsCatalogo';
 import Link from 'next/link';
-// import Image from 'next/image';
 import React from 'react';
 
-export default function CatalogoCard({ image, idGerador, modelo, descricao, precoVenda, precoAluguelDiario }: IPropsCatalogo) {
+export default function CatalogoCard({ idGerador, modelo, descricao, precoVenda, precoAluguelDiario }: IPropsCatalogo) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
 

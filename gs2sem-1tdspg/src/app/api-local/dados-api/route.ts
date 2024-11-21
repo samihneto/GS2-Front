@@ -13,7 +13,7 @@ export async function GET() {
       }
   
       return NextResponse.json(agendamentos);
-    } catch (error) {
+    } catch {
       return NextResponse.json(
         { status: 500 }
       );
@@ -53,7 +53,7 @@ export async function POST(request: Request) {
         await fs.writeFile(filePath, JSON.stringify(agendamentos, null, 2));
 
         return NextResponse.json(novoAgendamento, { status: 201 });
-    } catch (error) {
+    } catch {
         return NextResponse.json(
             { status: 500 }
         );
@@ -81,7 +81,7 @@ export async function DELETE(request: Request) {
       await fs.writeFile(filePath, JSON.stringify(updatedAgendamentos, null, 2));
   
       return NextResponse.json({ message: "Agendamento excluído com sucesso" }, { status: 200 });
-    } catch (error) {
+    } catch {
       return NextResponse.json({ error: "Erro ao excluir o agendamento" }, { status: 500 });
     }
   }
