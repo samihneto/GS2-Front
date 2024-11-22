@@ -27,7 +27,7 @@ https://github.com/felipe-2833/GeraSolJava
 https://github.com/samihneto/GS2-Front
 
 ### Instruções para o uso:
-- cd challenge1-1tdspg (Precisa estar nessa pasta)
+- cd gs2sem-1tdspg (Precisa estar nessa pasta)
 - npm install
 - npm run dev
 
