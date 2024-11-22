@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Global Sollution - 2° Semestre
 
-First, run the development server:
+## ☀️ Gerasol ⚡
+### _Integrantes_
+- Diego Bassalo Canals - RM558710 - DGMMX
+- Felipe Levy Stephens Fidelix - RM556426 - felipe-2833
+- Samir Hage Neto - RM557260 -samihneto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **Uma solução para oficinas que querem atender os clientes da melhor maneira** 👨‍🔧
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Nossa solução**
+A Gerasol é uma solução inovadora desenvolvida para simplificar o acesso a energia confiável e sustentável. Nosso objetivo é facilitar a comunicação entre clientes e nossa equipe de especialistas, oferecendo um processo ágil e descomplicado para aquisição, aluguel e manutenção de geradores solares. Dessa forma, garantimos que as necessidades de energia de nossos clientes sejam atendidas de maneira eficiente e personalizada.
 
-## Learn More
+- Link do Vídeo:
+https://www.youtube.com/watch?v=gMVWhxx2-hk
 
-To learn more about Next.js, take a look at the following resources:
+- Link da Vercel:
+gerasol.vercel.app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Link do Repositório Java:
+https://github.com/felipe-2833/GeraSolJava
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Instruções para o uso:
+- cd challenge1-1tdspg (Precisa estar nessa pasta)
+- npm install
+- npm run dev
 
-## Deploy on Vercel
+### Instruções Importantes
+    - **Mensagens para o Chat: **
+    Olá
+    ajuda
+    comprar
+    alugar
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    - Você acessa a aba de agendamentos escolhendo o botão Alugar dentro da página de produto.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### Muito obrigado por ler!
