@@ -23,6 +23,9 @@ gerasol.vercel.app
 - Link do Repositório Java:
 https://github.com/felipe-2833/GeraSolJava
 
+- Link do Repositório do Projeto:
+https://github.com/samihneto/GS2-Front
+
 ### Instruções para o uso:
 - cd challenge1-1tdspg (Precisa estar nessa pasta)
 - npm install
